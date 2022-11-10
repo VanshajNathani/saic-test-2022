@@ -50,7 +50,7 @@ Using netcat, I got a reverse a shell on the target machine.
 Executing the command 'netcap -lvnp 4444' in my terminal and the going to the url "<targetmachineIP>/uploads/avatar\_saic\_perfectly\_safe\_avatar.PHP" gave me a reverse shell on the target machine. 
 YEAHH!!
 
-Firtly, I made sure to get and interactive terminal. So I used python for it. Below is the command used.
+Firtly, I made sure to get an interactive terminal. So I used python for it. Below is the command used.
 `/usr/bin/python -c 'import pty; pty.spawn("/bin/bash")'`
 
 ## VM1
