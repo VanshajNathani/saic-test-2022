@@ -52,3 +52,5 @@ with open("wifiConnections.json") as f:
 So, basically, all the scripts in `pre-ud.d` folder should complete their execution before connecting to any network. That why, A C code with a fork statement was used, which created a child process which run the python file. Then the python file goes to sleep for _2 seconds_. During this time, the parent C process completes its execution, the child process changes its parent to the current terminal. After the 2 seconds durations, we can assume thatg the system has connected to a different netowrk. Therefore `nmcli` gives us the correct network connection.
 
 This script makes use of any external proxy configuration application named `Proxyman`. I tried to make it all self developed but given the time constraints, this is what I used in the final script.
+
+Also you will need proxyman installed on your system + a profile with the name `iit` with proper proxy configurations suited for our college wifi.
